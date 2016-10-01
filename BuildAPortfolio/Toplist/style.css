@@ -19,18 +19,41 @@ html {
   }
 */
 
-.title {
+body {
+    font-family: Helvetica, sans-serif;
+}
 
+.title {
+    background-color: #33BEBE;
+    color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: normal;
 }
 
 .app {
-
+    display: flex;
+    display: -webkit-flex;  /*Safari*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*justify-content: space-around;
+    flex-wrap: wrap;*/
+    padding-top: 25px;
+    margin: 5px;
 }
 
 .screenshot {
     max-width: 460px;
+    margin:5px;
+    margin-right: 10px;
 }
 
 .description {
     max-width: 705px;
+    color: #7C8B88;
+    margin:5px;
+    font-size: 20px;
 }
