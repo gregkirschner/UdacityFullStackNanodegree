@@ -19,8 +19,15 @@ h1 {
     color: blue;
 }
 
+.grid {
+
+}
+
 .row {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex;  /* Safari */
 }
 
 .col-1 {
@@ -28,7 +35,7 @@ h1 {
 }
 
 .col-2 {
-    width: 16.33%;
+    width: 16.66%;
 }
 
 .col-3 {
@@ -37,6 +44,7 @@ h1 {
 
 .col-4 {
     width: 33.33%;
+    padding: 10px;
 }
 
 .col-5 {
@@ -69,4 +77,19 @@ h1 {
 
 .col-12 {
     width: 100%
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        color: red;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col7,.col-8,.col-9,.col-10,
+    .col-11,.col-12 {
+        width: 100%;
+    }
 }
