@@ -24,6 +24,24 @@ body {
     font-size: 60px;
 }
 
+@media (max-width: 544px) {
+    .title-super {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .title-tagline {
+        text-align: center;
+    }
+
+    .title-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 .title-logo {
     margin-top: 20px;
 }
@@ -35,4 +53,3 @@ body {
 hr {
     border-width: 3px;
 }
-
