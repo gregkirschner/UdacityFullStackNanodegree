@@ -18,12 +18,12 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img class="title-logo" src="http://www.placehold.it/100x100" alt="Portfolio Log">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="title-logo img-responsive" src="https://placekitten.com/100/100" alt="Portfolio Log">
                 </div>
                 <div class="col-md-6 text-right text-uppercase">
                     <h1 class="text-thin title-super">Jane Doette</h1>
-                    <h4>Front-End Ninja</h4>
+                    <h4 class="title-tagline">Front-End Ninja</h4>
                 </div>
             </div>
             <div class="row">
@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <img class="img-responsive" src="http://www.placehold.it/1040x550" alt="Main Content Image">
+                    <img class="img-responsive center-block" src="https://placekitten.com/1040/550" alt="Main Content Image">
                 </div>
             </div>
             <div class="row">
@@ -43,7 +43,8 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img class="img-responsive" data-toggle="modal" data-target="#appify" src="http://www.placehold.it/300x300" alt="Appify Image">
+                    <!-- Setup image to launch modal -->
+                    <img class="img-responsive center-block" data-toggle="modal" data-target="#appify" src="https://placekitten.com/300/300" alt="Appify Image">
                     <h3 class="text-uppercase">Appify</h3>
                     <p>https://github.com/udacity/appify</p>
 
@@ -53,12 +54,12 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Sunflower Image">
+                    <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Sunflower Image">
                     <h3 class="text-uppercase">Sunflower</h3>
                     <p>https://github.com/udacity/sunflower</p>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Bokeh Image">
+                    <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Bokeh Image">
                     <h3 class="text-uppercase">Bokeh</h3>
                     <p>https://github.com/udacity/bokeh</p>
                 </div>
@@ -71,11 +72,18 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Appify</h4>
+        <!-- Can add rows/columns to header and body if desired. In this case, I am lining up the Appify title with the "X" in the same row. -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="modal-title">Appify</h4>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
         </div>
         <div class="modal-body">
-            <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Appify Image">
+            <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Appify Image">
             <p>This project was done for my Udacity Full-Stack Web Developer Nanodegree. This is a modal made with Bootstrap.</p>
         </div>
         <div class="modal-footer">
