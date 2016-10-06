@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- This example was done while following Udacity demo -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>Mock #5</title>
+        <!-- CSS is applied in the order it shows up, so put your CSS below Bootstrap
+             This way our styles are not overridden by Bootstrap style   -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mock5_style.css">
+        <!-- jQuery is required for Modal feature -->
+        <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="title-logo" src="http://www.placehold.it/100x100" alt="Portfolio Log">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="text-thin title-super">Jane Doette</h1>
+                    <h4>Front-End Ninja</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="http://www.placehold.it/1040x550" alt="Main Content Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted title-secondary">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="img-responsive" data-toggle="modal" data-target="#appify" src="http://www.placehold.it/300x300" alt="Appify Image">
+                    <h3 class="text-uppercase">Appify</h3>
+                    <p>https://github.com/udacity/appify</p>
+
+                    <!-- Modal launch; also setup for image clicks -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#appify"> Learn more about Appify.
+                    </button>
+
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Sunflower Image">
+                    <h3 class="text-uppercase">Sunflower</h3>
+                    <p>https://github.com/udacity/sunflower</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Bokeh Image">
+                    <h3 class="text-uppercase">Bokeh</h3>
+                    <p>https://github.com/udacity/bokeh</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Building a Bootstrap Modal. The id must match the data-target in the launch. -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="appify">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Appify</h4>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive" src="http://www.placehold.it/300x300" alt="Appify Image">
+            <p>This project was done for my Udacity Full-Stack Web Developer Nanodegree. This is a modal made with Bootstrap.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button>  -->
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</html>
