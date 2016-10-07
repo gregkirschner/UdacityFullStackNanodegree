@@ -54,14 +54,18 @@
 
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Sunflower Image">
+                    <img class="img-responsive center-block" data-toggle="modal" data-target="#sunflower" src="https://placekitten.com/300/300" alt="Sunflower Image">
                     <h3 class="text-uppercase">Sunflower</h3>
                     <p>https://github.com/udacity/sunflower</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sunflower"> Learn more about Sunflower.
+                    </button>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Bokeh Image">
+                    <img class="img-responsive center-block" src="https://placekitten.com/300/300" data-toggle="modal" data-target="#bokeh" alt="Bokeh Image">
                     <h3 class="text-uppercase">Bokeh</h3>
                     <p>https://github.com/udacity/bokeh</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bokeh"> Learn more about Bokeh.
+                    </button>
                 </div>
             </div>
         </div>
@@ -93,4 +97,56 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+    <!-- Project #2 Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="sunflower">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+        <div class="modal-header">
+        <!-- Can add rows/columns to header and body if desired. In this case, I am lining up the Appify title with the "X" in the same row. -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="modal-title">Sunflower</h4>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Sunflower Image">
+            <p>Sunflower is the second project on this mockup. Very nice.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Project #3 Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="bokeh">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+        <div class="modal-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="modal-title">Bokeh</h4>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive center-block" src="https://placekitten.com/300/300" alt="Bokeh Image">
+            <p>Bokeh is a Python graphics library.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 </html>
